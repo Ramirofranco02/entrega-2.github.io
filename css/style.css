@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* Estilos generales */
-/* Estilos globales */
 body {
   font-family: Arial, sans-serif;
   background-color: #2c3e50;
@@ -8,14 +6,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-
 
 /* Encabezado */
 header {
@@ -25,241 +15,25 @@ header {
   text-align: center;
 }
 
-.main-content h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #e74c3c;
-}
-
-.main-content p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #bdc3c7;
-}
-
-.btn {
-  background-color: #e74c3c;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #c0392b;
-}
-
-/* Pie de página */
-footer {
-  background-color: #34495e;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-/* Estilos para la sección de inicio */
-.text-container {
-  background-size: cover;
-  background-position: center;
-  color: #1a0101;
-  text-align: center;
-  padding: 1px 0;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.text-container {
+/* Navegación */
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #3a3939;
+  justify-content: center;
   padding: 20px;
 }
 
-.text-container__title {
-  font-size: 40px;
-  margin-bottom: 20px;
+nav li {
+  margin: 0 20px;
 }
 
-.text-container__description {
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-
-.text-container__cta {
-  display: inline-block;
-  background-color: #007BFF;
-  color: #130202;
-  padding: 10px 20px;
+nav a {
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.text-container__cta:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos para la sección de servicios */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 20px;
-  align-items: center;
-  justify-items: center;
-  padding: 20px;
-  background-color: #f7f7f7;
-}
-
-.product {
-  position: relative;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.product:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.product img {
-  width: 250px;
-  height: auto;
-  display: block;
-}
-
-.description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  font-size: 14px;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: opacity 0.3s, transform 0.3s;
 }
 
-.product:hover .description {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Otras secciones y estilos adicionales */
-
-/* Estilos del formulario de pagos */
-.payment-form {
-  margin-top: 20px;
-}
-
-.payment-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-.payment-form input[type=text],
-.payment-form input[type=email],
-.payment-form input[type=password],
-.payment-form select,
-.payment-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  color: #333;
-}
-
-.payment-form input[type=submit] {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.payment-form input[type=submit]:hover {
-  background-color: #0056b3;
-}
-
-/* Estilos del formulario de registro */
-.register-form {
-  margin-top: 20px;
-}
-
-.register-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-.register-form input[type=text],
-.register-form input[type=email],
-.register-form input[type=password] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-  color: #333;
-}
-
-.register-form input[type=submit] {
-  background-color: #28a745;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.register-form input[type=submit]:hover {
-  background-color: #1e7e34;
-}
-
-h1, h2, h3 {
-  margin-bottom: 10px;
-  color: #0a0a0a;
-}
-
-h4, h5 {
-  margin-bottom: 25px;
-  color: #ccc;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-p {
-  margin-bottom: 50px;
-  color: rgb(233, 230, 247);
-  font-family: "Times New Roman", Times, serif;
-  font-style: normal;
-}
-
-/* Estilos para los relatos de los creadores */
-.creator-story {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #020202;
-  padding: 20px;
-  margin-bottom: 20px;
+nav a:hover {
+  color: #e74c3c;
 }
 
 .footer {
@@ -315,6 +89,199 @@ p {
     color: rgba(255, 0, 179, 0.171);
     text-shadow: 0 0 10px #ff0, 0 0 20px rgb(0, 255, 136), 0 0 30px rgb(153, 0, 255);
   }
+}
+/* Navegación */
+.navbar {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.navbar .ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar .ul .li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.navbar .ul .li .a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.navbar .ul .li .a:hover {
+  color: #ff9900;
+}
+
+/* Navegación */
+/* Estilos del menú de navegación*/
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.navbar .ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navbar .ul .li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+.navbar .ul .li .a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.navbar .ul .li .a:hover {
+  color: #ff9900;
+}
+
+/* Estilos del formulario de registro */
+.register-form {
+  margin-top: 20px;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.register-form input[type=text],
+.register-form input[type=email],
+.register-form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.register-form input[type=submit] {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.register-form input[type=submit]:hover {
+  background-color: #1e7e34;
+}
+
+/* Estilos del formulario de pagos */
+.payment-form {
+  margin-top: 20px;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.payment-form input[type=text],
+.payment-form input[type=email],
+.payment-form input[type=password],
+.payment-form select,
+.payment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.payment-form input[type=submit] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-form input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la sección de servicios */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.product {
+  position: relative;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+  width: 250px;
+  height: auto;
+  display: block;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 14px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.product:hover .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos para los relatos de los creadores */
+.creator-story {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #020202;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
