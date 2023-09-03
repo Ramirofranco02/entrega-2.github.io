@@ -35,10 +35,20 @@
   }
   
   .social-icon img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 50px; /* Ajusta el ancho y alto según tus necesidades */
+    height: 50px;
+    border-radius: 50%; /* Hace que los íconos sean redondos */
+    margin: 10px; /* Espaciado entre los íconos */
   }
-  
+  .social-icons .icon:before {
+    content: ""; /* Esto es necesario si estás usando íconos de fuente */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-size: 70%; /* Ajusta el tamaño del ícono según tus necesidades */
+    color: white; /* Color del ícono (si estás usando íconos de fuente) */
+  }
   .flashy-text {
     font-size: 20px;
     font-weight: bold;

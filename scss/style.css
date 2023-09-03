@@ -73,20 +73,8 @@ nav a:hover {
 }
 
 .social-icon img {
-  width: 50px; /* Ajusta el ancho y alto según tus necesidades */
-  height: 50px;
-  border-radius: 50%; /* Hace que los íconos sean redondos */
-  margin: 10px; /* Espaciado entre los íconos */
-}
-
-.social-icons .icon:before {
-  content: ""; /* Esto es necesario si estás usando íconos de fuente */
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  background: no-repeat center center;
-  background-size: 70%; /* Ajusta el tamaño del ícono según tus necesidades */
-  color: white; /* Color del ícono (si estás usando íconos de fuente) */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .flashy-text {
@@ -154,22 +142,9 @@ nav a:hover {
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
-  /* Establece el tamaño de la portada */
-  /* Establece un contenedor para la imagen de portada (opcional) */
 }
 .navbar .ul .li .a:hover {
   color: #ff9900;
-}
-.navbar .ul .li .a .img-portada {
-  width: 100%; /* Establece el ancho al 100% del contenedor */
-  height: auto; /* Autoajusta la altura para mantener la proporción original */
-  max-height: 400px; /* Establece una altura máxima para evitar que la imagen sea demasiado grande */
-  object-fit: cover; /* Recorta la imagen para que llene el contenedor sin deformarla */
-}
-.navbar .ul .li .a .contenedor-portada {
-  width: 100%; /* Establece el ancho del contenedor según tus preferencias */
-  max-width: 1200px; /* Establece un ancho máximo para la portada si es necesario */
-  margin: 0 auto; /* Centra el contenedor en la página */
 }
 
 /* Estilos del formulario de registro */
@@ -251,10 +226,110 @@ nav a:hover {
 }
 
 /* Estilos para la sección de servicios */
-/* Establece un ancho y alto fijo para todas las imágenes */
-img {
-  width: 300px; /* Cambia este valor al tamaño deseado */
-  height: 250px; /* Cambia este valor al tamaño deseado */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e2b46;
+  color: #9b8c8c;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 120px;
+  margin: 0;
+  padding: 20px;
+}
+
+.header {
+  background-color: #2ecc71;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.header p {
+  font-size: 1.2rem;
+}
+
+.ventas {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.ventas .venta {
+  width: calc(33.33% - 20px);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.ventas .venta img {
+  max-width: 100%;
+  height: auto;
+}
+.ventas .venta h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.ventas .venta p {
+  font-size: 1rem;
+  color: #666;
+}
+.ventas .venta .precio {
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+.ventas .venta .boton-comprar {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.ventas .venta .boton-comprar:hover {
+  background-color: #25a25a;
+}
+.ventas .venta .boton-comprar .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+.ventas .venta .boton-comprar .footer .contacto {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.ventas .venta .boton-comprar .footer .redes-sociales {
+  list-style: none;
+  padding: 0;
+}
+.ventas .venta .boton-comprar .footer .redes-sociales li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.ventas .venta .boton-comprar .footer .redes-sociales li a {
+  color: #99ccff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.ventas .venta .boton-comprar .footer .redes-sociales li a:hover {
+  color: white;
+}
+@media (max-width: 768px) {
+  .ventas .venta .boton-comprar .footer {
+    padding: 20px 0;
+  }
+  .ventas .venta .boton-comprar .footer .contacto {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

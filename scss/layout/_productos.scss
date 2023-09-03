@@ -5,91 +5,14 @@ $color-secundario: #3498db;
 $color-fondo: #0e2b46;
 $color-texto: #9b8c8c;
 $color-destacado: #e67e22;
-
-// Estilos generales
-body {
-  font-family: Arial, sans-serif;
-  background-color: $color-fondo;
-  color: $color-texto;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 120px;
-  margin: 0 ;
-  padding: 20px;
-}
-
-
-// Encabezado
-.header {
-  background-color: $color-primario;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+/* Establece un ancho y alto fijo para todas las imágenes */
+img {
+    width: 300px; /* Cambia este valor al tamaño deseado */
+    height: 250px; /* Cambia este valor al tamaño deseado */
   }
+  
 
-  p {
-    font-size: 1.2rem;
-  }
-}
 
-// Sección de productos
-.ventas {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 20px;
-
-  .venta {
-    width: calc(33.33% - 20px); // Tres productos por fila con margen
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-      margin: 10px 0;
-    }
-
-    p {
-      font-size: 1rem;
-      color: #666;
-    }
-
-    .precio {
-      font-size: 1.2rem;
-      color: #e67e22;
-    }
-
-    .boton-comprar {
-      display: inline-block;
-      background-color: #2ecc71;
-      color: white;
-      padding: 8px 15px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-
-      &:hover {
-        background-color: darken(#2ecc71, 10%);
-      }
-    }
-  }
-}
 
   
  
