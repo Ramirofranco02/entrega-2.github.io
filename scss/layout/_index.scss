@@ -1,0 +1,55 @@
+/* Navegación */
+// Estilos generales
+$color-fondo: #333;
+$color-texto: #fff;
+$color-hover: #ff9900;
+$padding-vertical: 10px;
+$padding-horizontal: 20px;
+
+/* Estilos del menú de navegación*/
+.navbar {
+  background-color: $color-fondo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  
+  .ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    .li {
+      margin: 0;
+      padding: 0;
+      display: inline;
+      
+      .a {
+        color: $color-texto;
+        text-decoration: none;
+        padding: $padding-vertical $padding-horizontal;
+        
+        &:hover {
+          color: $color-hover;
+        }
+        /* Establece el tamaño de la portada */
+.img-portada {
+  width: 100%; /* Establece el ancho al 100% del contenedor */
+  height: auto; /* Autoajusta la altura para mantener la proporción original */
+  max-height: 400px; /* Establece una altura máxima para evitar que la imagen sea demasiado grande */
+  object-fit: cover; /* Recorta la imagen para que llene el contenedor sin deformarla */
+}
+
+/* Establece un contenedor para la imagen de portada (opcional) */
+.contenedor-portada {
+  width: 100%; /* Establece el ancho del contenedor según tus preferencias */
+  max-width: 1200px; /* Establece un ancho máximo para la portada si es necesario */
+  margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+    
+        }
+      }
+    }
+  }

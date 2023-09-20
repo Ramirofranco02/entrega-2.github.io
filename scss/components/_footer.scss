@@ -1,0 +1,64 @@
+.footer {
+    background-color: #0f0101;
+    color: rgb(12, 11, 11);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: rgb(8, 7, 7);
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .social-icon img {
+    width: 50px; /* Ajusta el ancho y alto según tus necesidades */
+    height: 50px;
+    border-radius: 50%; /* Hace que los íconos sean redondos */
+    margin: 10px; /* Espaciado entre los íconos */
+  }
+  .social-icons .icon:before {
+    content: ""; /* Esto es necesario si estás usando íconos de fuente */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-size: 70%; /* Ajusta el tamaño del ícono según tus necesidades */
+    color: white; /* Color del ícono (si estás usando íconos de fuente) */
+  }
+  .flashy-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0;
+    animation: flashy 2s infinite alternate;
+  }
+  
+  @keyframes flashy {
+    from {
+      color: rgba(255, 0, 179, 0.171);
+      text-shadow: 0 0 10px #ff0, 0 0 20px rgb(0, 255, 136), 0 0 30px rgb(153, 0, 255);
+    }
+}
