@@ -22,3 +22,38 @@ nav ul {
   nav a:hover {
     color: #e74c3c;
   }
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none; /* Oculta el menú principal en dispositivos móviles */
+    }
+  
+    /* Estilos para el menú desplegable en dispositivos móviles */
+    .menu-mobile {
+      display: block; /* Muestra el menú desplegable en dispositivos móviles */
+    }
+  }
+  
+  .show-menu {
+    display: block;
+  }
+  
+  /* Estilos para los elementos del menú desplegable */
+  .menu ul {
+    list-style-type: none;
+  }
+  
+  .menu li {
+    padding: 10px;
+    text-align: center;
+    background-color: #333;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu li:hover {
+    background-color: #444;
+  }
+  

@@ -25,20 +25,16 @@
   }
   
   .social-icon {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+    max-width: 40px; /* Ajusta este valor según tus necesidades */
+    height: auto;
   }
+  
   
   .social-icon img {
     width: 50px; /* Ajusta el ancho y alto según tus necesidades */
     height: 50px;
     border-radius: 50%; /* Hace que los íconos sean redondos */
-    margin: 10px; /* Espaciado entre los íconos */
+    
   }
   .social-icons .icon:before {
     content: ""; /* Esto es necesario si estás usando íconos de fuente */

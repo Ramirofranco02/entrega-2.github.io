@@ -12,7 +12,7 @@ $padding-horizontal: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 100px;
   
  /* Navegación */
 /* Estilos para la navegación */
@@ -44,20 +44,61 @@ nav a:hover {
 }
         }
         /* Establece el tamaño de la portada */
+        .imagen-container {
+          max-width: 100%; // Ajusta el ancho máximo según tus necesidades
+          height: auto;   // Esto mantendrá la relación de aspecto original
+        }
+        .imagen-principal {
+          width: 100%;  // Ajusta el ancho de la imagen al 100% del contenedor
+          max-width: 1000px;  // Puedes ajustar este valor según tus necesidades
+          height: auto; // Mantiene la relación de aspecto original
+        
+          // Si deseas centrar la imagen horizontalmente en su contenedor
+          margin: 0 auto;
+          display: block;
+        }
+        
+          img {
+            max-width: 100%; // Asegura que la imagen no supere el ancho máximo del contenedor
+            height: auto;    // Mantiene la relación de aspecto original de la imagen
+            display: block;  // Elimina el espacio adicional debajo de la imagen
+            margin: 0 auto;  // Centra la imagen horizontalmente en su contenedor si es necesario
+          }
+          /* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none; /* Oculta el menú principal en dispositivos móviles */
+  }
 
-  .encabezado-img{
-   
-    width: 100%; /* Establece el ancho al 100% del contenedor */
-  height: auto; /* Autoajusta la altura para mantener la proporción original */
-  max-height: 400px; /* Establece una altura máxima para evitar que la imagen sea demasiado grande */
-  object-fit: cover; /* Recorta la imagen para que llene el contenedor sin deformarla */
+  /* Estilos para el menú desplegable en dispositivos móviles */
+  .menu-mobile {
+    display: block; /* Muestra el menú desplegable en dispositivos móviles */
+  }
 }
 
-/* Establece un contenedor para la imagen de portada (opcional) */
-/* Estilo para la imagen principal */
-img {
-  max-width: 100%;
-  max-height: 400px;
-  /* Puedes ajustar estos valores según tus necesidades */
+.show-menu {
+  display: block;
 }
+
+/* Estilos para los elementos del menú desplegable */
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 10px;
+  text-align: center;
+  background-color: #333;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: #444;
+}
+
+        
 
