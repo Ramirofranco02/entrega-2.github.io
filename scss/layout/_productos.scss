@@ -9,8 +9,34 @@ $color-destacado: #e67e22;
 img {
     width: 300px; /* Cambia este valor al tamaño deseado */
     height: 250px; /* Cambia este valor al tamaño deseado */
+ /* Estilos para la navegación */
+.navbar {
+  ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el espacio interno de la lista */
+
+    li {
+      display: inline; /* Mostrar elementos de navegación en línea */
+      margin-right: 20px; /* Agregar margen derecho para separar los elementos */
+      
+      /* Estilos adicionales para los enlaces */
+      a {
+        text-decoration: none; /* Eliminar la decoración de subrayado de los enlaces */
+        color: #333; /* Color del texto del enlace */
+        
+        &:hover {
+          color: #007bff; /* Color del texto del enlace al pasar el ratón por encima */
+        }
+      }
+    }
+  }
+}
+
   }
   
+  nav a:hover {
+    color: #e74c3c;
+  }
 
 
 

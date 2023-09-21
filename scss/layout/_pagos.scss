@@ -37,3 +37,27 @@
   .payment-form input[type=submit]:hover {
     background-color: #0056b3;
   }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  nav li {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff; /* Color de enlace del menú */
+    font-weight: bold; /* Estilo de fuente en negrita */
+    transition: color 0.3s; /* Transición suave del color de enlace */
+    margin: 200px;
+    padding: 100px;
+  }
+  
+  nav a:hover {
+    color: #e74c3c;
+  }

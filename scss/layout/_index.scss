@@ -14,24 +14,34 @@ $padding-horizontal: 20px;
   align-items: center;
   height: 60px;
   
-  .ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    
-    .li {
-      margin: 0;
-      padding: 0;
-      display: inline;
+ /* Navegación */
+/* Estilos para la navegación */
+.navbar {
+  ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0; /* Eliminar el espacio interno de la lista */
+
+    li {
+      display: inline; /* Mostrar elementos de navegación en línea */
+      margin-right: 20px; /* Agregar margen derecho para separar los elementos */
       
-      .a {
-        color: $color-texto;
-        text-decoration: none;
-        padding: $padding-vertical $padding-horizontal;
+      /* Estilos adicionales para los enlaces */
+      a {
+        text-decoration: none; /* Eliminar la decoración de subrayado de los enlaces */
+        color: #333; /* Color del texto del enlace */
         
         &:hover {
-          color: $color-hover;
+          color: #007bff; /* Color del texto del enlace al pasar el ratón por encima */
+        }
+      }
+    }
+  }
+}
+
+
+nav a:hover {
+  color: #e74c3c;
+}
         }
         /* Establece el tamaño de la portada */
 
@@ -50,7 +60,4 @@ img {
   max-height: 400px;
   /* Puedes ajustar estos valores según tus necesidades */
 }
-}
-}
-}
-}
+
