@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Registro y Pagos</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">INICIO</a></li>
-            <li><a href="../pages/contacto.html">CONTACTO</a></li>
-            <li><a href="pagos.html">MEDIOS DE PAGO</a></li>
-            <li><a href="../pages/quienes somos.html">NUESTRA HISTORIA</a></li>
-            <li><a href="../pages/productos.html">PRODUCTOS</a></li>
-        </ul>
-    </nav>
-    
+    <header>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <a href="../pages/contacto.html">contacto</a>
+                <a href="../pages/quienes somos.html">quienes somos</a>
+                <a href="../pages/productos.html">productos</a>
+                <a href="../index.html">Inicio</a>
+            </ul>
+          </nav>
+    </header>
+
     <h1>Registro</h1>
     <div class="register-form">
 
     <form action="registro.php" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
-        
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
-        
+
         <label for="contrasena">Contraseña:</label>
         <input type="password" id="contrasena" name="contrasena" required>
-        
+
         <button type="submit">Registrarse</button>
     </form>
     </div>
@@ -37,33 +39,32 @@
     <form action="pago.php" method="POST">
         <label for="tarjeta">Número de tarjeta:</label>
         <input type="text" id="tarjeta" name="tarjeta" required>
-        
+
         <label for="nombre_tarjeta">Nombre en la tarjeta:</label>
         <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" required>
-        
+
         <label for="fecha_vencimiento">Fecha de vencimiento:</label>
         <input type="text" id="fecha_vencimiento" name="fecha_vencimiento" required>
-        
+
         <button type="submit">Pagar</button>
     </form>
     </div>
     <footer>
         <div class="social-icons">
-              <div class="social-icon">
-                <a href="https://www.facebook.com/profile.php?id=100064342831310&mibextid=LQQJ4d" target="_blank"><img src="../images/Facebook logo.png" alt="Facebook"></a>
+            <div class="social-icon">
+                <a href="#" target="_blank"><img src="c:\Users\Ramiro\Desktop\CURSO\images\Facebook logo.png" alt="Facebook"></a>
               </div>
               <div class="social-icon">
-                <a href="https://instagram.com/by.hasba?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="../images/instagram logo.png" alt="instagram"></a>
+                <a href="#" target="_blank"><img src="c:\Users\Ramiro\Desktop\CURSO\images\instagram logo.png" alt="instagram"></a>
               </div>
               <div class="social-icon">
-                <a href="#" target="_blank"><img src="../images/Imagen de WhatsApp 2023-07-24 a las 23.49.42.jpg" alt="WhatsApp"></a>
-              </div>
-            </div>
+                <a href="#" target="_blank"><img src="c:\Users\Ramiro\Desktop\CURSO\images\twitter logo.png" alt="twitter"></a>
+          </div>
         <div class="flashy-text">
-        <p class="footer-copy">© 2023 Mi Página Web. Todos los derechos reservados.</p>
-        <p>Derechos reservados &copy; 2023 | Empresa Emergente</p>
-    </div>
+            <p class="footer-copy">© 2023 Mi Página Web. Todos los derechos reservados.</p>
+            <p>Derechos reservados &copy; 2023 | Empresa Emergente</p>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
